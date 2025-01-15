@@ -1,11 +1,24 @@
-import React from 'react'
+// service.tsx
+import axios from 'axios';
 
-const Service = () => {
-  return (
-    <div className='bg-pink-500 text-center h-9 text-lg'>
-      <h1>Service</h1>
-    </div>
-  )
-}
+const API_URL = 'https://jsonplaceholder.typicode.com';
 
-export default Service
+export const fetchData = async () => {
+  try {
+    const response = await axios.get(`${API_URL}/data`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    throw error;
+  }
+};
+
+export const postData = async (data: any) => {
+  try {
+    const response = await axios.post(`${API_URL}/data`, data);
+    return response.data;
+  } catch (error) {
+    console.error('Error posting data:', error);
+    throw error;
+  }
+};
