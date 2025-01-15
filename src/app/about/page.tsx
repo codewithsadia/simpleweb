@@ -6,7 +6,7 @@ interface AboutProps {
   image: string;
 }
 
-export const About: React.FC<AboutProps> = ({ image }) => {
+ const About=()=> {
   return (
     <div id="about" className="container mx-auto px-10 py-16 text-pink-600">
       {/* Heading */}
@@ -48,3 +48,4 @@ export const About: React.FC<AboutProps> = ({ image }) => {
   );
 };
 
+export default About;
