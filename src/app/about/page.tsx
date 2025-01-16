@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 
-interface AboutProps {
+interface About {
   image: string;
 }
 
@@ -17,7 +17,7 @@ interface AboutProps {
       {/* Image Section */}
       <div className="flex justify-center mb-6">
         <Image
-          src="/lady.png"
+          src="/images/lady.png"
           alt="image"
           width={200}
           height={200}
@@ -33,7 +33,7 @@ interface AboutProps {
         specialize in crafting visually appealing websites, building responsive
         layouts, and ensuring seamless user experiences across all devices.
         With expertise in various frontend frameworks and design tools, I
-        deliver high-quality, dynamic, and interactive web pages. I'm also
+        deliver high-quality, dynamic, and interactive web pages. I&aposm also
         well-versed in e-commerce platforms like Shopify, where I help clients
         create and manage their online stores effectively.
       </p>
